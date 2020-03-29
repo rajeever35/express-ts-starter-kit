@@ -1,0 +1,74 @@
+{
+  "name": "graphql-backend",
+  "version": "0.0.1",
+  "description": "A template for initialising GraphQL backend services",
+  "main": "lib/index.js",
+  "scripts": {
+    "cleanup": "git clean -xf && yarn",
+    "postinstall": "yarn tsc -b",
+    "start": "node lib/index.js",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pranjalnadhani/graphql-backend.git"
+  },
+  "keywords": [
+    "graphql",
+    "typescript",
+    "service",
+    "backend"
+  ],
+  "author": "Pranjal Nadhani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pranjalnadhani/graphql-backend/issues"
+  },
+  "homepage": "https://github.com/pranjalnadhani/graphql-backend#readme",
+  "devDependencies": {
+    "@types/chai": "4.2.11",
+    "@types/jest": "25.1.4",
+    "@typescript-eslint/eslint-plugin": "2.25.0",
+    "@typescript-eslint/parser": "2.25.0",
+    "chai": "4.2.0",
+    "cz-conventional-changelog": "3.1.0",
+    "eslint": "6.8.0",
+    "eslint-config-prettier": "6.10.1",
+    "eslint-config-standard": "14.1.1",
+    "eslint-plugin-import": "2.20.1",
+    "eslint-plugin-jest": "23.8.2",
+    "eslint-plugin-node": "11.0.0",
+    "eslint-plugin-prettier": "3.1.2",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-standard": "4.0.1",
+    "husky": "4.2.3",
+    "jest": "25.2.3",
+    "lint-staged": ">=10",
+    "prettier": "2.0.2",
+    "ts-jest": "25.2.1",
+    "typescript": "3.8.3",
+    "validate-commit-msg": "2.14.0"
+  },
+  "dependencies": {},
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "validate-commit-msg"
+    }
+  },
+  "lint-staged": {
+    "*.ts": "eslint --cache --fix",
+    "*.{ts,md,json}": "prettier --write"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "rootDir": "src"
+  }
+}
