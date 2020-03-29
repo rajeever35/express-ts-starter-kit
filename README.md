@@ -1,9 +1,9 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 ![Tests](https://github.com/pranjalnadhani/node-ts-starter-kit/workflows/Unit%20Tests/badge.svg)
 
-# Starter kit for Node.js Typescript projects
+# Starter kit for Express.js Typescript projects
 
-A template for initialising a Node.js Typescript project.
+A template for initialising a Express.js Typescript project.
 
 ## Features
 - [x] **Typescript** (Allows writing strongly typed JavaScript code)
@@ -15,7 +15,7 @@ A template for initialising a Node.js Typescript project.
 - [x] **Github Actions CI** (Builds and run tests upon git push or PRs to the branch `master`)
 
 ## Installation
-You can install dependencies using yarnby running:
+You can install dependencies using yarn by running:
 
 ```
 yarn install
