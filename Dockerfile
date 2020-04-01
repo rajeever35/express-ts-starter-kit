@@ -1,7 +1,5 @@
 FROM node:lts
 
-RUN ["chmod", "+x", "/var/run/docker.sock
-"] 
 RUN mkdir /app
 WORKDIR /app
 
