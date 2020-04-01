@@ -1,7 +1,7 @@
 FROM node:lts
 
-RUN sudo chmod 777 /var/run/docker.sock
-
+RUN ["chmod", "+x", "/var/run/docker.sock
+"] 
 RUN mkdir /app
 WORKDIR /app
 
