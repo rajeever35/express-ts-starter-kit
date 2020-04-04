@@ -37,5 +37,7 @@ pipeline {
       sh "docker login"
       sh "docker pull rajxxx/express-ts:6"
       sh "docker run -d -p 9000:9000 rajxxx/express-ts:6"
+      }
+    }
   }
 }
