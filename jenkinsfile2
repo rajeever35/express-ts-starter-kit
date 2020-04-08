@@ -37,7 +37,7 @@ pipeline {
     script{
       docker.withRegistry( '', registryCredential ){
         sh "docker pull rajxxx/express-ts:6"
-        sh "docker run -d -p --ip 3.21.236.253:9000:9000 rajxxx/express-ts:6"
+        sh "docker run -d -p --ip 52.14.67.50:9000:9000 rajxxx/express-ts:6"
          }
         }
       }
