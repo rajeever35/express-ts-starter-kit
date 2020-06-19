@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git 'https://github.com/rajeever35/express-ts-starter-kit.git'
+        git 'https://github.com/rajeever35/express-ts-starter-kit'
       }
     }
     stage('Building image') {
